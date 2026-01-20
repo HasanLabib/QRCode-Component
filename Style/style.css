@@ -2,6 +2,7 @@
   --primary-bg-color: #D5E1EF;
   --slate-900:#1F314F;
   --slate-500:#68778D;
+  --shadow-clr:rgba(0, 0, 0, 0.05);
 
 }
 
@@ -57,6 +58,7 @@
     text-align: center;
      margin: 1.5rem 2rem 1rem; 
      color: var(--slate-900);
+     line-height: 120%;
 
 }
 .paragraph{
@@ -65,6 +67,13 @@
     font-weight:400;
     text-align: center;
     margin: 1rem 2rem 2.5rem; 
+    line-height: 140%;
+    letter-spacing: 0.0125rem;
+}
+.shadow{
+    border-radius: 1.25rem;
+box-shadow: 0rem 1.5625rem 1.5625rem 0rem var(--shadow-clr);
+background: white;
 }
 
 @media (min-width: 20rem) and (max-width: 48rem){
@@ -73,6 +82,6 @@
     margin: 0 auto;
 }
     .center{
-    margin: 1.75rem;
+    margin: 9.78125rem 1.71875rem;
 }
 }
