@@ -15,9 +15,8 @@
 
 .container{
     max-width: 90rem;
-    margin: 0 auto;
+
     display: flex;
-    justify-items: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -34,12 +33,13 @@
 }
 
 .center{
-    margin: 14.40625rem 35rem;
+    max-width: 100%;
+    margin: clamp(12rem,14.40625rem ,20rem) auto;
 }
 .flex{
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -48,8 +48,8 @@
     max-height: 18rem;
     object-fit: cover;
     border-radius: 0.625rem;
-    /* margin: 1rem 1rem 1.5rem; */
-    margin-top: 1rem;
+
+    margin-block-start: 1rem;
 
 }
 .headline{
@@ -78,7 +78,7 @@ background: white;
 
 @media (min-width: 20rem) and (max-width: 48rem){
     .container{
-    max-width: 48rem;
+    min-width: 20rem;
     margin: 0 auto;
 }
     .center{
